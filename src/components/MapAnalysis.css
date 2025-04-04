@@ -1,0 +1,169 @@
+.analysis-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.analysis-column {
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.analysis-section {
+  margin-bottom: 25px;
+}
+
+.analysis-section h3 {
+  font-size: 1.2rem;
+  color: #3498db;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.entity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.entity-tag {
+  background-color: #e1f5fe;
+  color: #0288d1;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.land-use-chart {
+  margin-top: 10px;
+}
+
+.land-use-item {
+  margin-bottom: 8px;
+}
+
+.land-use-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.land-use-bar-container {
+  position: relative;
+  height: 24px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.land-use-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.land-use-percentage {
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.vegetation-data, .infrastructure-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vegetation-item, .infrastructure-item {
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.infrastructure-item h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.change-analysis {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.change-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.change-table th, .change-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.change-table th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.positive-change {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.negative-change {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
